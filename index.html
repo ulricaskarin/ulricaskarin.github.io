@@ -6,14 +6,28 @@ layout: default
 
   <h1 class="page-heading">Ulrica Skarins jobbar här</h1>
 
+    <div class="page-spotlight">
+
+        <h2>In the Spotlight:</h2>
+            <p>En liten rad spotlight</p>
+    </div>
+
+    <h2>Latest Blogposts:</h2>
+
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+          <!-- Post preview class not working on post content - works with normal text though -->
+
+        <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+
+          <p><span class="post-preview">{{ post.content | truncatewords: 40}}</span><br />
+
+            <a href="{{ post.url | prepend: site.baseurl }}">Read More...</a>
+
+          </p>
       </li>
     {% endfor %}
   </ul>
