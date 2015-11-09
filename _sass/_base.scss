@@ -97,8 +97,9 @@ a {
     }
 
     &:hover {
-        color: $text-color;
-        text-decoration: underline;
+        color: #aa0000; //$text-color;
+        text-decoration: none;
+
     }
 }
 
@@ -153,9 +154,30 @@ pre {
 /**
  * Wrapper
  */
+/*
 .wrapper {
     max-width: -webkit-calc(800px - (#{$spacing-unit} * 2));
     max-width:         calc(800px - (#{$spacing-unit} * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+    @extend %clearfix;
+
+    @include media-query($on-laptop) {
+        max-width: -webkit-calc(800px - (#{$spacing-unit}));
+        max-width:         calc(800px - (#{$spacing-unit}));
+        padding-right: $spacing-unit / 2;
+        padding-left: $spacing-unit / 2;
+    }
+} */
+
+.wrapper {
+    max-width: -webkit-calc(960px - (#{$spacing-unit} * 2));
+    max-width:         calc(960px - (#{$spacing-unit} * 2));
+    border: 1px solid $text-color;
+    border-radius: 5px;
+    margin-top: 2em;
     margin-right: auto;
     margin-left: auto;
     padding-right: $spacing-unit;
