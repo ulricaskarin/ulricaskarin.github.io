@@ -8,10 +8,8 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-
-
 /**
- * Basic styling
+ * Basic body styling
  */
 body {
     font-family: $base-font-family;
@@ -19,12 +17,8 @@ body {
     line-height: $base-line-height;
     font-weight: 300;
     color: $text-color;
-    background-color: #fff;
-    background-image: url("../assets/images/symphony.png");
-    background-repeat: repeat;
-    background-attachment: fixed;
-    //background-color: $background-color;
     -webkit-text-size-adjust: 100%;
+    @include background-props();
 }
 
 
@@ -85,6 +79,7 @@ li {
  */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
+
 }
 
 
@@ -93,16 +88,19 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
+    color: $hotpink-color;
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+       // color: darken($hotpink-color, 15%);
     }
 
     &:hover {
-        color: #aa0000; //$text-color;
-        text-decoration: none;
+       color: $text-color;
+
+        position: relative;
+        top: 1px;
+        text-decoration: overline underline;
 
     }
 }
@@ -213,6 +211,76 @@ pre {
     }
 }
 
+// MOVE TO BASE?
+.content {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    @include rounded();
+}
+
+/* WRAP - for synchronized boxes */
+.wrap {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    @include media-query($on-palm) {
+        width: 100%;
+        min-width: 0;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+}
+
+.wrap:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.wrap-pad {
+    padding-top: 12px;
+    padding-left: 20px;
+    padding-right: 0;
+
+}
+/* BOXES width for no 1, 2, 3 */
+.box-1 { width: 100%; }
+.box-2 { width: 50%; }
+.box-3 { width: 25%; }
+
+/* BOXES - adjustments for all on page */
+[class*='box-'] {
+    float: left;
+    padding-right: 20px;
+
+    @include media-query($on-palm) {
+
+        width: auto;
+        float: none;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 0px;
+        padding-right: 10px;
+
+    }
+
+}
+
+
+
+/* BOX-SIZING | filling out boxes */
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 
 
 /**
@@ -236,12 +304,13 @@ pre {
 
     > svg {
         display: inline-block;
-        width: 16px;
-        height: 16px;
+        width: 20px;
+        height: 20px;
+        padding: 0.1em;
         vertical-align: middle;
 
         path {
-            fill: $grey-color;
+            fill: $hotpink-color;
         }
     }
 }

@@ -2,7 +2,6 @@
 title: A dev students quest
 logourl: "assets/images/us_logo.png"
 author: Ulrica Skarin
-author_thumb: #url till tumbild
 email: ls222xp@student.lnu.se
 description: > # this means to ignore newlines until "baseurl:"
   Web programming student in quest of a deeper understanding
@@ -13,6 +12,7 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 # Social Media
 twitter_username: acirlu33
 github_username:  ulricaskarin
+
 
 # Build settings
 markdown: kramdown

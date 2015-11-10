@@ -6,13 +6,7 @@ layout: default
 
   <h1 class="page-heading">Ulrica Skarins jobbar här</h1>
 
-    <div class="page-spotlight">
-
-        <h2>In the Spotlight:</h2>
-            <p>En liten rad spotlight</p>
-    </div>
-
-    <h2>Latest Blogposts:</h2>
+   <h2>Latest Blogposts:</h2>
 
   <ul class="post-list">
     {% for post in site.posts %}
@@ -23,15 +17,43 @@ layout: default
 
         <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
 
-          <p><span class="post-preview">{{ post.content | truncatewords: 40}}</span><br />
+          <span class="post-preview">{{ post.content | truncatewords: 40}}</span><br />
 
             <a href="{{ post.url | prepend: site.baseurl }}">Read More...</a>
 
-          </p>
+
       </li>
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <h2>Other stuff</h2>
+    <div class="wrap wrap-pad">
+
+        <div class="box-3">
+
+            <div class="content"><img src="assets/images/us_logo.png" alt="Ulrica" /></div>
+
+        </div>
+
+
+        <div class="box-3">
+
+            <div class="content"><img src="assets/images/us_logo.png" alt="Ulrica" /></div>
+
+        </div>
+
+        <div class="box-3">
+
+            <div class="content"><img src="assets/images/us_logo.png" alt="Ulrica" /></div>
+
+        </div>
+
+        <div class="box-3">
+
+            <div class="content"><img src="assets/images/us_logo.png" alt="Ulrica" /></div>
+
+        </div>
+
+    </div>
 
 </div>

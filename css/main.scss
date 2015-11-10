@@ -2,26 +2,75 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
+
 @import url(https://fonts.googleapis.com/css?family=Hind);
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
 
-// Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   1.2em;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+// Blacks and whites:
+$color-black: #000000;
+$color-white: #ffffff;
 
-$spacing-unit:     30px;
+// Pinks:
+$hotpink-color: #df2779;
+$hotpink-color-light: lighten($hotpink-color, 40%);
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color: #228022;
-
+// Greys:
 $grey-color:       #828282;
+$grey-color-middle: #454545;
+$grey-color-darker: #373737;
+
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
+// Theme background:
+@mixin background-props() {
+    background-color: $grey-color-middle;
+    background-image: url("../assets/images/symphony.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+
+
+$text-color:       #111;
+
+$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-size:   1.2em;
+$small-font-size:  $base-font-size * 0.875;
+$mini-font-size: $base-font-size * 0.75;
+$base-line-height: 1.5;
+
+// Media query measurements:
 $on-palm:          600px;
 $on-laptop:        800px;
+
+// Various units:
+$spacing-unit:     30px;
+
+
+/**
+* MIXINS
+*/
+
+// Bold and upper text:
+@mixin bold-upper-text() {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+// Rounds corners:
+@mixin rounded($radius: 0.5em) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+// Sets opacity on element:
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    $opacity-ie: $opacity * 100;
+    filter: alpha(opacity=$opacity-ie); //IE8
+}
 /*
 // Our variables
 $base-font-family: Helvetica, Arial, sans-serif;

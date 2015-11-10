@@ -6,18 +6,24 @@
     //border-bottom: 1px solid $grey-color-light;
     border-bottom: 1px solid #000;
     min-height: 200px;
-    background-color: #373737;
+    background-color: $grey-color-darker;
 
     // Positioning context for the mobile navigation icon
     position: relative;
+
 }
 
 .site-title {
-    font-size: 26px;
-    line-height: 56px;
-    letter-spacing: -1px;
+    font-size: 1.1em;
+    line-height: 50px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 0;
-    float: left;
+    text-align: center;
+
+    //float: left;
 
     &,
     &:visited {
@@ -25,36 +31,31 @@
         //color: $grey-color-dark;
     }
 }
-/*
-.site_sub {
 
-    background-color: #ccc;
+.site-nav-contain {
+    background-color: #595858;
     width: 100%;
-    min-height: 40px;
-    border-radius: 2px;
-    padding: 0.3em;
+    height: 50px;
+    margin-right: 1em;
+    border-bottom: 1px solid #000;
 
-    /* Hidden in mobile */
-/*  @include media-query($on-palm) {
+    @include media-query($on-palm) {
+       height: 10px;
+    }
 
-          visibility: hidden !important;
-          display: none;
-          width: 0;
-          height: 0;
-
-  }
-} */
+}
 .site-nav {
     float: right;
-    line-height: 56px;
+    line-height: 52px;
+    padding-right: 1em;
+    //@include bold-upper-text;
 
     .menu-icon {
         display: none;
     }
 
     .page-link {
-        color: #fff;
-        //color: $text-color;
+        color: $text-color;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the first one
@@ -64,17 +65,20 @@
     }
 
     .page-link:hover {
-        color: deeppink;
+        color: $hotpink-color;
+        position: relative;
+        top: 2px;
+
     }
 
     @include media-query($on-palm) {
         position: absolute;
         top: 9px;
         right: 30px;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
+        background-color: $color-white;
+        border: 2px solid black;
         text-align: right;
+        @include rounded;
 
         .menu-icon {
             display: block;
@@ -132,31 +136,16 @@
     font-size: 20px;
 }
 
-.page-spotlight {
-    border: 1px dashed #ccc;
-    border-radius: 1em;
-    padding: 1em;
 
-    > h2 {
-        text-decoration: underline;
-    }
-
-        > p {
-        font-size: 0.8em;
-        background-color: yellow;
-        }
-
-}
 
 .post-preview {
-    font-size: $small-font-size;
-    background-color: red;
-    text-decoration: underline;
+    font-size: $mini-font-size;
 }
 
 .post-list {
     margin-left: 0;
     list-style: none;
+
 
     > li {
         margin-bottom: $spacing-unit;
@@ -164,7 +153,7 @@
 }
 
 .post-meta {
-    font-size: $small-font-size;
+    font-size: $mini-font-size;
     color: $grey-color;
 }
 
@@ -180,7 +169,7 @@
  */
 .post-header {
     margin-bottom: $spacing-unit;
-    background-color: green;
+
 }
 
 .post-title {
@@ -195,7 +184,7 @@
 
 .post-content {
     margin-bottom: $spacing-unit;
-    background-color: yellow;
+
 
     h2 {
         font-size: 32px;
@@ -229,9 +218,10 @@
     border-top: 1px dashed #000;
     //border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
-    background-color: #ccc;
+    background-color: $grey-color-darker;
 }
 
+// NOT NEEDED:
 .footer-heading {
     font-size: 1.2em;
     font-style: italic;
@@ -251,8 +241,8 @@
 }
 
 .footer-col-wrapper {
-    font-size: .8em;
-    color: $grey-color;
+    font-size: 0.8em;
+    color: $color-white;
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
 }
