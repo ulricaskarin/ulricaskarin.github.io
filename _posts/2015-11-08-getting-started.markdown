@@ -2,7 +2,7 @@
 layout: post
 title:  "Getting started"
 date:   2015-11-08 22:22:22
-category: Jekyll
+category: Hupp
 comments: true
 published: true
 ---

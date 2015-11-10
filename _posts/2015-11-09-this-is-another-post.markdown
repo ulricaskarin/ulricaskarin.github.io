@@ -6,7 +6,6 @@ category: Jekyll
 
 image: /../assets/images/ls222xp_ulricaskarin.png
 alt: My little pic
-title: Hey - its a title!
 
 comments: true
 published: true
