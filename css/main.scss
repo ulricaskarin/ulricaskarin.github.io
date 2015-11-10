@@ -30,8 +30,6 @@ $grey-color-dark:  darken($grey-color, 25%);
     background-attachment: fixed;
 }
 
-
-
 $text-color:       #111;
 
 $base-font-family: Helvetica, Arial, sans-serif;
@@ -59,7 +57,7 @@ $spacing-unit:     30px;
 }
 
 // Rounds corners:
-@mixin rounded($radius: 0.5em) {
+@mixin rounded($radius) {
     -webkit-border-radius: $radius;
     -moz-border-radius: $radius;
     border-radius: $radius;

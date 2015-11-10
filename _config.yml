@@ -13,6 +13,16 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: acirlu33
 github_username:  ulricaskarin
 
+# Comments
+comments:
+    provider: disqus
+    disqus:
+        short_name: dev_stud
+    livefyre:
+        site_id:3
+    intensedebate:
+        account: lillulli
+
 
 # Build settings
 markdown: kramdown

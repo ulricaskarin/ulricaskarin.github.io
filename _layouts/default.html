@@ -5,20 +5,28 @@
 
   <body>
 
-      <div id="big_wrap">
+  <!--Containing wrap-->
+  <div id="big_wrap">
 
         {% include header.html %}
 
         <div class="page-content">
+
           <div class="wrapper">
+
             {{ content }}
+
           </div>
+
         </div>
 
         {% include footer.html %}
 
       </div>
-      <script id="dsq-count-scr" src="//adevstudentsquest.disqus.com/count.js" async></script>
+
+  <!--DISQUS-->
+  <script id="dsq-count-scr" src="//adevstudentsquest.disqus.com/count.js" async></script>
+
   </body>
 
 </html>

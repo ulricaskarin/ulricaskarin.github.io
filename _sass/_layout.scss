@@ -77,8 +77,9 @@
         right: 30px;
         background-color: $color-white;
         border: 2px solid black;
+        padding: 0.3em;
         text-align: right;
-        @include rounded;
+        @include rounded(0.2em);
 
         .menu-icon {
             display: block;
@@ -167,6 +168,16 @@
 /**
  * BLOGPOSTS:
  */
+
+.post-image {
+
+    max-width: 400px;
+    margin: auto;
+    border: 1px dashed $grey-color;
+    @include rounded(1em);
+    padding: 0.2em;
+}
+
 .post-header {
     margin-bottom: $spacing-unit;
 

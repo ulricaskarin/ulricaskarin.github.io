@@ -185,7 +185,7 @@ pre {
 
     @include media-query($on-palm) {
 
-        border: 0px;
+        border: 0;
     }
 
 }
@@ -215,7 +215,7 @@ pre {
 .content {
     padding: 0.5em;
     border: 1px solid #ccc;
-    @include rounded();
+    @include rounded(0.2em);
 }
 
 /* WRAP - for synchronized boxes */
@@ -228,8 +228,8 @@ pre {
     @include media-query($on-palm) {
         width: 100%;
         min-width: 0;
-        margin-left: 0px;
-        margin-right: 0px;
+        margin-left: 0;
+        margin-right: 0;
         padding-left: 20px;
         padding-right: 10px;
     }
@@ -255,17 +255,17 @@ pre {
 /* BOXES - adjustments for all on page */
 [class*='box-'] {
     float: left;
-    padding-right: 20px;
+    padding-right: $spacing-unit;
 
-    @include media-query($on-palm) {
+    @include media-query($on-laptop) {
 
         width: auto;
         float: none;
-        margin-left: 0px;
-        margin-right: 0px;
+        margin-left: 0;
+        margin-right: 0;
         margin-top: 10px;
         margin-bottom: 10px;
-        padding-left: 0px;
+        padding-left: 0;
         padding-right: 10px;
 
     }
@@ -294,6 +294,26 @@ pre {
         clear: both;
     }
 }
+
+
+/**
+* FEATURES
+*/
+.twitter-div {
+    font-size: $mini-font-size;
+    font-style: italic;
+    text-align: center;
+    border: 1px dashed $grey-color;
+    @include rounded(1em);
+    padding: 0.2em;
+}
+
+#disqus_thread {
+    width: 80%;
+}
+
+
+
 
 
 
