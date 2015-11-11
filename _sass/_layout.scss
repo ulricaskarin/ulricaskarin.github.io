@@ -123,7 +123,10 @@
     padding-top: 1.2em;
 }
 
+.pagination {
 
+    font-size: $mini-font-size * 0.80;
+}
 
 /**
  * PAGE CONTENT:
@@ -137,7 +140,9 @@
     font-size: 20px;
 }
 
-
+/**
+ * BLOGPOSTS PREVIEW ON INDEX:
+ */
 
 .post-preview {
     font-size: $mini-font-size;
@@ -163,75 +168,6 @@
     font-size: 24px;
 }
 
-
-
-/**
- * BLOGPOSTS:
- */
-
-// All categories using target to pinpoint them when clicked | resource tutorial: http://schoewilliam.fr/2015/02/10/jekyll-pro-tip-awesome-archive-page.html:
-.catblock {
-    font-size: $mini-font-size * 0.90;
-    border: 1px dashed $grey-color;
-    padding: 0.4em;
-
-    @include rounded(0.5em)
-
-
-}
-.catblock:not(:target) {
-    width: 100%;
-    margin: 0;
-    border: 1px dashed $grey-color;
-
-    > ul {
-        >li {
-            list-style-type: none;
-        }
-
-
-    }
-
-    //display: none;
-
-}
-.catblock:target {
-     animation: slidedown .5s 1;
-    -webkit-animation: slidedown .5s 1;
-
-}
-@keyframes slidedown {
-    from {
-        opacity: 0;
-        transform: translate(0, -50px);
-    }
-    to {
-        opacity: 1;
-        transform: translate(0);
-    }
-}
-@-webkit-keyframes slidedown {
-    from {
-        opacity: 0;
-        -webkit-transform: translate(0, -50px);
-    }
-    to {
-        opacity: 1;
-        -webkit-transform: translate(0);
-    }
-}
-
-
-#allposts {
-    font-size: $mini-font-size * 0.80;
-
-    > h2 {
-
-        font-size: $mini-font-size * 1.2;
-        font-weight: bold;
-    }
-
-}
 .post-image {
 
     max-width: 400px;
@@ -284,6 +220,81 @@
         }
     }
 }
+
+/**
+ * BLOGPOSTS LIST LOGIC INDEX:
+ */
+
+// All categories using target to pinpoint them when clicked | resource tutorial: http://schoewilliam.fr/2015/02/10/jekyll-pro-tip-awesome-archive-page.html:
+.catblock {
+    font-size: $mini-font-size * 0.75;
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+
+
+    //border: 1px dashed $grey-color;
+    //@include rounded(0.5em)
+
+    > h2 {
+
+        font-size: $mini-font-size * 1.1;
+        font-weight: bold;
+
+    }
+
+    > ul {
+
+
+
+        > li {
+
+            margin-top: 5px;
+            margin-left: $spacing-unit - 60;
+            text-align: left;
+            list-style-type: none;
+        }
+
+    }
+}
+
+#allposts:not(:target) {
+    width: 100%;
+    margin: 0;
+    border: 1px dashed $grey-color;
+
+
+    display: none;
+
+}
+#allposts:target {
+    animation: slidedown .5s 1;
+    -webkit-animation: slidedown .5s 1;
+
+}
+
+@keyframes slidedown {
+    from {
+        opacity: 0;
+        transform: translate(0, -50px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@-webkit-keyframes slidedown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate(0, -50px);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate(0);
+    }
+}
+
+
+
 
 /**
  * SITE FOOTER

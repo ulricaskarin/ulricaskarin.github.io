@@ -50,6 +50,13 @@ $spacing-unit:     30px;
 * MIXINS
 */
 
+@mixin hide-element() {
+    visibility: hidden !important;
+    display: none;
+    width: 0;
+    height: 0;
+}
+
 // Bold and upper text:
 @mixin bold-upper-text() {
     text-transform: uppercase;

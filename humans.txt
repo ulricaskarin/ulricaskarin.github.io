@@ -1,15 +1,20 @@
-/* AUTHOR */
+/* TEAM */
 
-Developer: Ulrica Skarin
+Development and Design: Ulrica Skarin
 Twitter: @acirlu33
 GitHub: ulricaskarin
+Mail: ls222xp(at)student.lnu.se
 Location: Sundsvall, Sweden
+
+Support: The great staff at Linnaeus University, Kalmar, Sweden
 
 /* SITE */
 
-Last Update: 2015/11/09
+Last Update: 2015/11/11
 Site Name:
-Site URL:
-Language: English / Swedish
+Site URL: https://ulricaskarin.github.io
+Language: English
+Standards: HTML5
+Components: Jekyll, GitHub
 IDE: WebStorm
 Graphic Tools: Illustrator CC / Photoshop CC

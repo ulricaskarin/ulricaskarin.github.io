@@ -6,54 +6,65 @@ layout: default
 
     <div class="wrap wrap-pad">
 
-    <div class="box-2">
+    <div class="box-3">
 
-        <h1 class="page-heading">A dev students quest | Blog</h1>
+        <!--Lists blog posts when unfolded link:-->
+        <p><a href="#allposts">&hearts; Show all posts</a></p>
 
-        <!--Lists latest blog posts with preview-->
+        <div class="catblock" id="allposts">
 
-            <h2>Latest Blogposts:</h2>
+        <!--To do - make an archives page-->
+            {% for post in site.posts %}
 
-                <ul class="post-list">
+            {% assign currentdate = post.date | date: "%Y" %}
 
-                    {% for post in site.posts %}
+            {% if currentdate != date %}
 
-                         <li>
+            {% unless forloop.first %}</ul>{% endunless %}
 
-                            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <h2 id="y{{post.date | date: "%y"}}">{{ currentdate }}</h2>
 
-                            <!-- Post preview class not working on post content - works with normal text though -->
+            <ul>
+                {% assign date = currentdate %}
 
-                            <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+                {% endif %}
 
-                            <span class="post-preview">{{ post.content | truncatewords: 40}}</span><br />
+                <li>{{ post.date | date: "%-b %d" }}: <a href="{{ post.url }}">{{ post.title }}</a></li>
 
-                            <a href="{{ post.url | prepend: site.baseurl }}">Read More...</a>
+                {% if forloop.last %}</ul>
 
-                         </li>
+            {% endif %}
 
-                    {% endfor %}
+            {% endfor %}
 
-                </ul>
+        </div>
+        <p>Geh geh</p>
 
     </div>
 
-    <div class="box-3">
+        <div class="box-2">
 
+            <h1 class="page-heading">A dev students quest | Blog</h1>
 
+            <!-- Lists 3 latest blog posts with 30 word preview-->
 
-        <!--Lists latest 10 blog posts-->
-        <div class="catblock" id="allposts">
+            <h2>Latest Blogposts:</h2>
 
-            <h2>Blogpost List:</h2>
+            <ul class="post-list">
 
-            <ul>
-
-                {% for post in site.posts limit: 10 %}
+                {% for post in paginator.posts  %}
 
                 <li>
 
-                    <a href="{{ post.url }}"> {{ post.title }}</a>
+                    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+                    <!-- Post preview class not working on post content - works with normal text though -->
+
+                    <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+
+                    <span class="post-preview">{{ post.content | truncatewords: 30}}</span><br />
+
+                    <a href="{{ post.url | prepend: site.baseurl }}">Read More...</a>
 
                 </li>
 
@@ -61,15 +72,26 @@ layout: default
 
             </ul>
 
-        </div>
+            <!-- Pagination links -->
+            {% if paginator.total_pages > 1 %}
+            <div class="pagination">
+                {% if paginator.previous_page %}
+                <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+                {% else %}
+                <span class="previous">Previous</span>
+                {% endif %}
+                <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+                {% if paginator.next_page %}
+                <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+                {% else %}
+                <span class="next ">Next</span>
+                {% endif %}
+            </div>
+            {% endif %}
 
         </div>
 
     </div>
-
-
-
-
 
 
 </div>

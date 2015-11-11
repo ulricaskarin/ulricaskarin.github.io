@@ -1,14 +1,14 @@
 # Site settings
-title: A dev students quest
+title: A dev students quest | Ulrica Skarin
 logourl: ../assets/images/us_logo.png
 author: Ulrica Skarin
 email: ls222xp@student.lnu.se
 description: > # this means to ignore newlines until "baseurl:"
-  Web programming student in quest of a deeper understanding
+  A dev students quest to find a deeper understanding by Ulrica Skarin
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://localhost:4000" # the base hostname & protocol for your site
 
-
+paginate: 2 #pagination
 # Social Media
 twitter_username: acirlu33
 github_username:  ulricaskarin
@@ -26,4 +26,5 @@ comments:
 
 # Build settings
 markdown: kramdown
+timezone: Europe/Stockholm
 

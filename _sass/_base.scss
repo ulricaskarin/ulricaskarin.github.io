@@ -43,8 +43,6 @@ img {
     vertical-align: middle;
 }
 
-
-
 /**
  * Figures
  */
@@ -55,8 +53,6 @@ figure > img {
 figcaption {
     font-size: $small-font-size;
 }
-
-
 
 /**
  * Lists
@@ -72,8 +68,6 @@ li {
     }
 }
 
-
-
 /**
  * Headings
  */
@@ -81,8 +75,6 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 
 }
-
-
 
 /**
  * Links
@@ -105,8 +97,6 @@ a {
     }
 }
 
-
-
 /**
  * Blockquotes
  */
@@ -122,8 +112,6 @@ blockquote {
         margin-bottom: 0;
     }
 }
-
-
 
 /**
  * Code formatting
@@ -151,29 +139,6 @@ pre {
     }
 }
 
-
-
-/**
- * Wrapper
- */
-/*
-.wrapper {
-    max-width: -webkit-calc(800px - (#{$spacing-unit} * 2));
-    max-width:         calc(800px - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    @extend %clearfix;
-
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(800px - (#{$spacing-unit}));
-        max-width:         calc(800px - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
-    }
-} */
-
 #big_wrap {
 
     margin: 0 auto;
@@ -189,8 +154,6 @@ pre {
     }
 
 }
-
-
 
 .wrapper {
     max-width: -webkit-calc(960px - (#{$spacing-unit} * 2));
@@ -212,11 +175,7 @@ pre {
 }
 
 // MOVE TO BASE?
-.content {
-    padding: 0.5em;
-    border: 1px solid #ccc;
-    @include rounded(0.2em);
-}
+
 
 /* WRAP - for synchronized boxes */
 .wrap {
@@ -243,7 +202,7 @@ pre {
 
 .wrap-pad {
     padding-top: 12px;
-    padding-left: 15px;
+    padding-left: 5px;
     padding-right: 0;
 
 }
@@ -256,6 +215,7 @@ pre {
 [class*='box-'] {
     float: left;
     padding-right: $spacing-unit;
+
 
     @include media-query($on-laptop) {
 
