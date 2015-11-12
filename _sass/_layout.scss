@@ -159,7 +159,10 @@
 
 .post-link {
     display: block;
-    font-size: 24px;
+    font-size: 25px;
+}
+.post-link:before{
+    content: url("../assets/images/pin.png");
 }
 
 // If image in post this class is used:

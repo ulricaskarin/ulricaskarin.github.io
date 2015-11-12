@@ -1,11 +1,14 @@
 ---
 layout: page
 title: Projects
-permalink: /projects/
+
+author: Ulrica Skarin
+type: article
+description: LNU School projects 
 ---
 
-In the future I will on this page present different school projects. In the meantime you may want to take a look
-here: 
+This page will eventually be filled with different school projects. To start with, there is not much here just yet! 
+Bare with me - there is more to come I hope.
 
-- [LNU Web programming](https://coursepress.lnu.se/program/webbprogrammerare/student/){:target="_blank"}
-
+- **Nov 12, 2015** Self Portrait in Illustrator for course in Graphical Tools 1ME402: [Portrait](http://ulricaskarin.com/self_portrait.php){:target="_blank"}
+- **Nov 1, 2015** Website project for course in Web Technics 1ME321: [Elsas Café](http://ulricaskarin.com/u3/index.html){:target="_blank"}
