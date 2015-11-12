@@ -6,6 +6,7 @@ category: SEO
 
 author: Ulrica Skarin
 comments: true
+published: true
 ---
 *Content is king, but a king is powerless without followers*.
 

@@ -6,6 +6,7 @@ category: github
 
 author: Ulrica Skarin
 comments: true
+published: true
 ---
 I first learned about git and GitHub this fall (2015) when I started my studies at the Linnaeus University. We have
 used it to version control our code exercises as well as code tests, cloning repos that already existed. I quickly
