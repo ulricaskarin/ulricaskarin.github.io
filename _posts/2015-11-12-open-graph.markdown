@@ -38,12 +38,14 @@ So how does it work? Well, the Open Graph Meta Tags is set in the head section o
 
 like audio, description and site-name. If you'd like a list of all possible OG-tags, take a look
 here: [The Open Graph Protocol][The Open Graph Protocol]. There are of course similar tools for other media,
-Twitter uses something called TwitterCards for example.
+Twitter uses something called TwitterCards for example, read more about this here: [Twitter Cards][Twitter Cards].
 
 I have used Open Graph in order to have control over how this website is presented when shared
 in social media. In the head section of the original code I'm using Jekyll syntax with if statements to validate if for example
 a page title exists. If not, the open graph meta tag will point the title to my Website title. This way I get an automatic
-and simple check to all my tags, without having to do it manually for each page. I have also validated my
+dynamic and simple check to all my tags, without having to do it manually for each page. As an example I have
+implemented an image tag in my blogposts front matter - in those posts containing a picture. So if a user shares a
+specific blogpost with a specific image, this is the one being shared. I have also validated my
 OG with FaceBooks open graph debugger: [FaceBook Debugger][FaceBook Debugger].
 
 ![Open Graph Logo]({{ site.url }}/assets/images/og_pic.png){: .post-image }
@@ -51,3 +53,4 @@ OG with FaceBooks open graph debugger: [FaceBook Debugger][FaceBook Debugger].
 
 [FaceBook Debugger]: https://developers.facebook.com/tools/debug/
 [The Open Graph Protocol]: http://ogp.me/
+[Twitter Cards]: http://davidensinger.com/2013/04/supporting-twitter-cards-with-jekyll/

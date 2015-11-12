@@ -1,7 +1,5 @@
 //-------------------------------------------- HEADER --------------------------------------------//
 .site-header {
-    //border-top: 5px solid $grey-color-dark;
-    //border-bottom: 1px solid $grey-color-light;
     border-bottom: 1px solid #000;
     min-height: 200px;
     background-color: $grey-color-darker;
@@ -62,7 +60,7 @@
     }
 
     .page-link:hover {
-        color: $hotpink-color;
+        color: $theme-color;
         position: relative;
         top: 2px;
 
