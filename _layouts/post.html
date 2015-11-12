@@ -9,29 +9,13 @@ layout: default
 
     <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • <i>By {{ page.author }}</i>{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
 
-      {% if post.image %}
-
-
-          <!--Post image if exists-->
-          <div class="post-image">
-
-              {% for post in site.posts %}
-
-            <img src="{{ post.image }}" alt="{{post.alt}}" title="{{post.title}}"/><br />
-
-
-
-      {% endfor %}
-
-      </div>
-      {% endif %}
   </header>
 
   <article class="post-content">
 
     {{ content }}
 
-
+      <!--Including twitter plug-->
       {% include twitter_plug.html %}
 
   </article>

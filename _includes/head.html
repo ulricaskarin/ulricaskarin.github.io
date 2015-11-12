@@ -7,7 +7,11 @@
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
     <!-- OPEN GRAPH DATA -->
+    {% if page.type %}
+    <meta content="{{ page.type }}" property="og:type">
+    {% else %}
     <meta content="blog" property="og:type" />
+    {% endif %}
     <meta content="{{ site.title }}" property="og:site_name">
     {% if page.title %}
     <meta content="{{ page.title }}" property="og:title">

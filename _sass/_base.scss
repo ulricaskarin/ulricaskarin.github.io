@@ -266,10 +266,13 @@ pre {
     border: 1px dashed $grey-color;
     @include rounded(1em);
     padding: 0.2em;
+    margin-top: 2em;
 }
 
 #disqus_thread {
-    width: 80%;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
 }
 
 
