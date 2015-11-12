@@ -6,13 +6,28 @@
 
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
-    <meta property="og:title" content="A dev students quest | Ulrica Skarin" />
-    <meta property="og:type" content="blog" />
-    <meta property="og:url" content="http://ulricaskarin.github.io/" />
-    <meta property="og:image" content="http://ulricaskarin.github.io/assets/images/us_logo.png" />
-    <meta property="og:description" content="A dev students quest to find a deeper understanding by Ulrica Skarin"/>
-    <meta name="description" content="{{ site.description }}">
-    <meta name="description" content="{{ site.description }}">
+    <!-- OPEN GRAPH DATA -->
+    <meta content="blog" property="og:type" />
+    <meta content="{{ site.title }}" property="og:site_name">
+    {% if page.title %}
+    <meta content="{{ page.title }}" property="og:title">
+    {% else %}
+    <meta content="{{ site.title }}" property="og:title">
+    {% endif %}
+    {% if page.description %}
+    <meta content="{{ page.description }}" property="og:description">
+    {% else %}
+    <meta content="{{ site.description }}" property="og:description">
+    {% endif %}
+    {% if page.url %}
+    <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+    {% endif %}
+    {% if page.image %}
+    <meta content="{{ page.image }}" property="og:image">
+    {% else %}
+    <meta content="http://ulricaskarin.github.io/assets/images/ls222xp_ulricaskarin.png" property="og:image">
+    {% endif %}
+
 
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">

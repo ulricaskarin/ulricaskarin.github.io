@@ -8,6 +8,16 @@ layout: default
 
     <div class="box-3">
 
+        <div class="short-presentation">
+
+            <p><i>{{ site.description }}</i></p>
+
+            <hr />
+
+            <br />
+
+        </div>
+
         <!--Lists blog posts when unfolded link:-->
         <p><a href="#allposts">&hearts; Show all posts</a></p>
 
@@ -44,7 +54,8 @@ layout: default
 
         <div class="box-2">
 
-            <h1 class="page-heading">A dev students quest | Blog</h1>
+            <div class="post-preview">
+
 
             <!-- Lists 3 latest blog posts with 30 word preview-->
 
@@ -62,7 +73,7 @@ layout: default
 
                     <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
 
-                    <span class="post-preview">{{ post.content | truncatewords: 30}}</span><br />
+                    {{ post.content | truncatewords: 30}}<br />
 
                     <a href="{{ post.url | prepend: site.baseurl }}">Read More...</a>
 
@@ -88,7 +99,7 @@ layout: default
                 {% endif %}
             </div>
             {% endif %}
-
+            </div>
         </div>
 
     </div>

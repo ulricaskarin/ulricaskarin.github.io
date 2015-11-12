@@ -4,7 +4,7 @@ title: Linked
 permalink: /linked/
 ---
 
-Some useful links on several topics is presented on this page.
+Some useful links on code related topics is presented on this page.
 
 #### Static Site Generators (Jekyll):
 
