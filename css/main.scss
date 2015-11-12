@@ -6,13 +6,11 @@
 @import url(https://fonts.googleapis.com/css?family=Hind);
 @import url(https://fonts.googleapis.com/css?family=Dancing+Script);
 
+//-------------------------------------------- COLORS --------------------------------------------//
+
 // Blacks and whites:
 $color-black: #000000;
 $color-white: #ffffff;
-
-// Pinks:
-$hotpink-color: #df2779;
-$hotpink-color-light: lighten($hotpink-color, 40%);
 
 // Greys:
 $grey-color:       #828282;
@@ -22,7 +20,23 @@ $grey-color-darker: #373737;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
-// Theme background:
+//-------------------------------------------- THEME --------------------------------------------//
+
+// Theme highlight color - accent color (current hot pink):
+$theme-color: #df2779;
+$theme-color-light: lighten($theme-color, 40%);
+
+// Ordinary text-color:
+$text-color:       #111;
+
+// Font properties
+$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-size:   1.2em;
+$small-font-size:  $base-font-size * 0.875;
+$mini-font-size: $base-font-size * 0.75;
+$base-line-height: 1.5;
+
+// Theme background mixin:
 @mixin background-props() {
     background-color: $grey-color-middle;
     background-image: url("../assets/images/symphony.png");
@@ -30,26 +44,24 @@ $grey-color-dark:  darken($grey-color, 25%);
     background-attachment: fixed;
 }
 
-$text-color:       #111;
-
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   1.2em;
-$small-font-size:  $base-font-size * 0.875;
-$mini-font-size: $base-font-size * 0.75;
-$base-line-height: 1.5;
+//------------------------------------- MEDIA QUERY & UNITS -------------------------------------//
 
 // Media query measurements:
 $on-palm:          600px;
 $on-laptop:        800px;
 
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
 // Various units:
 $spacing-unit:     30px;
 
+//---------------------------------------- VARIOUS MIXINS ----------------------------------------//
 
-/**
-* MIXINS
-*/
-
+// Hides element
 @mixin hide-element() {
     visibility: hidden !important;
     display: none;
@@ -76,41 +88,8 @@ $spacing-unit:     30px;
     $opacity-ie: $opacity * 100;
     filter: alpha(opacity=$opacity-ie); //IE8
 }
-/*
-// Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
 
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-$on-palm:          600px;
-$on-laptop:        800px;
-*/
-
-// Using media queries with like this:
-// @include media-query($palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
-
-
+//---------------------------------------- PARTIALS ----------------------------------------//
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import

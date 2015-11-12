@@ -1,6 +1,6 @@
 # Site settings
 title: A dev students quest
-logourl: ../assets/images/us_logo.png
+logourl: localhost:4000/assets/images/us_logo.png
 author: Ulrica Skarin
 email: ls222xp@student.lnu.se
 description: > # this means to ignore newlines until "baseurl:"

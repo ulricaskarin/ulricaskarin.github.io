@@ -1,6 +1,4 @@
-/**
- * SITE HEADER
- */
+//-------------------------------------------- HEADER --------------------------------------------//
 .site-header {
     //border-top: 5px solid $grey-color-dark;
     //border-bottom: 1px solid $grey-color-light;
@@ -13,6 +11,7 @@
 
 }
 
+//-------------------------------------------- SITE TITLE --------------------------------------------//
 .site-title {
     font-size: 1.1em;
     line-height: 50px;
@@ -23,15 +22,13 @@
     margin-bottom: 0;
     text-align: center;
 
-    //float: left;
-
     &,
     &:visited {
         color: #fff;
-        //color: $grey-color-dark;
     }
 }
 
+//------------------------------------------ NAVIGATIONAL -------------------------------------------//
 .site-nav-contain {
     background-color: #595858;
     width: 100%;
@@ -117,20 +114,14 @@
     }
 }
 
+//-------------------------------------------- BANNER PHOTO --------------------------------------------//
 .banner_photo {
     margin: 0 auto;
     text-align: center;
     padding-top: 1.2em;
 }
 
-.pagination {
-
-    font-size: $mini-font-size * 0.90;
-}
-
-/**
- * PAGE CONTENT:
- */
+//-------------------------------------------- PAGE CONTENT --------------------------------------------//
 .page-content {
     padding: $spacing-unit 0;
     min-height: 600px;
@@ -140,16 +131,19 @@
     font-size: 20px;
 }
 
-/**
- * BLOGPOSTS PREVIEW ON INDEX:
- */
+.pagination {
+
+    font-size: $mini-font-size * 0.90;
+}
+
+//-------------------------------------------- BLOGPOST PREVIEW --------------------------------------------//
 
 .post-preview {
     font-size: $mini-font-size;
     padding: 0.5em;
 }
 
-
+//----------------------------------------------- BLOGPOSTS -----------------------------------------------//
 .post-list {
     margin-left: 0;
     list-style: none;
@@ -232,24 +226,18 @@
     }
 }
 
+//----------------------------------------------- LEFT SIDE PRES -----------------------------------------------//
 .short-presentation {
     font-size: $mini-font-size * 0.85;
-    color: $hotpink-color
+    color: $theme-color;
 }
 
-/**
- * BLOGPOSTS LIST LOGIC INDEX:
- */
-
+//----------------------------------------------- SHOW ALL POSTS -----------------------------------------------//
 // All categories using target to pinpoint them when clicked | resource tutorial: http://schoewilliam.fr/2015/02/10/jekyll-pro-tip-awesome-archive-page.html:
 .catblock {
     font-size: $mini-font-size * 0.75;
     padding-top: 0.5em;
     padding-left: 0.5em;
-
-
-    //border: 1px dashed $grey-color;
-    //@include rounded(0.5em)
 
     > h2 {
 
@@ -259,8 +247,6 @@
     }
 
     > ul {
-
-
 
         > li {
 
@@ -309,12 +295,8 @@
     }
 }
 
+//----------------------------------------------- FOOTER -----------------------------------------------//
 
-
-
-/**
- * SITE FOOTER
- */
 .site-footer {
     border-top: 1px dashed #000;
     //border-top: 1px solid $grey-color-light;
@@ -389,5 +371,3 @@
         width:         calc(100% - (#{$spacing-unit} / 2));
     }
 }
-
-

@@ -1,6 +1,4 @@
-/**
- * Reset some basic elements
- */
+/*-------------------------------------------- RESET BASIC ELEMENTS --------------------------------------------*/
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
@@ -8,9 +6,7 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-/**
- * Basic body styling
- */
+/*-------------------------------------------- BASIC BODY --------------------------------------------*/
 body {
     font-family: $base-font-family;
     font-size: $base-font-size;
@@ -21,11 +17,7 @@ body {
     @include background-props();
 }
 
-
-
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
+/*-------------------------------------------- VERTICAL RYTHM --------------------------------------------*/
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
@@ -33,19 +25,13 @@ ul, ol, dl, figure,
     margin-bottom: $spacing-unit / 2;
 }
 
-
-
-/**
- * Images
- */
+/*--------------------------------------------- BASIC IMAGES ---------------------------------------------*/
 img {
     max-width: 100%;
     vertical-align: middle;
 }
 
-/**
- * Figures
- */
+/*--------------------------------------------- BASIC FIGURES ---------------------------------------------*/
 figure > img {
     display: block;
 }
@@ -54,9 +40,7 @@ figcaption {
     font-size: $small-font-size;
 }
 
-/**
- * Lists
- */
+/*---------------------------------------------- BASIC LIST ----------------------------------------------*/
 ul, ol {
     margin-left: $spacing-unit;
 }
@@ -68,38 +52,31 @@ li {
     }
 }
 
-/**
- * Headings
- */
+/*-------------------------------------------- BASIC HEADINGS --------------------------------------------*/
 h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 
 }
 
-/**
- * Links
- */
+/*--------------------------------------------- BASIC LINKS ---------------------------------------------*/
 a {
-    color: $hotpink-color;
+    color: $theme-color;
     text-decoration: none;
 
     &:visited {
-       // color: darken($hotpink-color, 15%);
+       // no change at the moment
     }
 
     &:hover {
        color: $text-color;
-
-        position: relative;
-        top: 1px;
-        text-decoration: overline underline;
+       position: relative;
+       top: 1px;
+       text-decoration: overline underline;
 
     }
 }
 
-/**
- * Blockquotes
- */
+/*-------------------------------------------- BASIC BL-QUOTES --------------------------------------------*/
 blockquote {
     color: $grey-color;
     border-left: 4px solid $grey-color-light;
@@ -113,9 +90,7 @@ blockquote {
     }
 }
 
-/**
- * Code formatting
- */
+/*-------------------------------------------- CODE FORMATTING --------------------------------------------*/
 pre,
 code {
     font-size: 15px;
@@ -139,6 +114,9 @@ pre {
     }
 }
 
+/*-------------------------------------------- BASIC WRAPPERS --------------------------------------------*/
+
+// Wraps all
 #big_wrap {
 
     margin: 0 auto;
@@ -155,6 +133,7 @@ pre {
 
 }
 
+// Wraps inner content
 .wrapper {
     max-width: -webkit-calc(960px - (#{$spacing-unit} * 2));
     max-width:         calc(960px - (#{$spacing-unit} * 2));
@@ -174,10 +153,7 @@ pre {
     }
 }
 
-// MOVE TO BASE?
-
-
-/* WRAP - for synchronized boxes */
+// Wrap for synchronized boxes
 .wrap {
     width: 100%;
     max-width: 960px;
@@ -215,8 +191,6 @@ pre {
 [class*='box-'] {
     float: left;
     padding-right: $spacing-unit;
-
-
     @include media-query($on-laptop) {
 
         width: auto;
@@ -232,20 +206,14 @@ pre {
 
 }
 
-
-
-/* BOX-SIZING | filling out boxes */
+// Box sizing
 *, *:after, *:before {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-
-
-/**
- * Clearfix
- */
+/*-------------------------------------------- CLEARFIXING --------------------------------------------*/
 %clearfix {
 
     &:after {
@@ -255,10 +223,7 @@ pre {
     }
 }
 
-
-/**
-* FEATURES
-*/
+/*-------------------------------------------- ADD FEATURES --------------------------------------------*/
 .twitter-div {
     font-size: $mini-font-size;
     font-style: italic;
@@ -275,14 +240,7 @@ pre {
     margin: 0 auto;
 }
 
-
-
-
-
-
-/**
- * Icons
- */
+/*-------------------------------------------- BASIC ICONS --------------------------------------------*/
 .icon {
 
     > svg {
@@ -293,9 +251,7 @@ pre {
         vertical-align: middle;
 
         path {
-            fill: $hotpink-color;
+            fill: $theme-color;
         }
     }
 }
-
-
