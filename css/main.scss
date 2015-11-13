@@ -75,6 +75,7 @@ $spacing-unit:     30px;
     font-weight: bold;
 }
 
+// Border mixin
 @mixin element_border($size, $color, $style) {
     border: $size $style $color;
 }
