@@ -15,8 +15,8 @@ published: true
 
 I first learned about git and GitHub this fall (2015) when I started my studies at the Linnaeus University. We have
 used it to version control our code exercises as well as code tests, cloning repos that already existed. I quickly
-learned all the basic commands such as ```git add``` ```git push``` and so on, but really not much deeper than that.
-Today I made a first change to that, and as simple as it might sound - I am so glad I went through with it.
+learned all the basic commands such as ```git add``` ```git push``` and so on, but I really have not had the time to dig deeper than that.
+Today I made a first change to that.
 
 I created my first basic test repo - a cookbook - and it wasn't at all complicated!
 

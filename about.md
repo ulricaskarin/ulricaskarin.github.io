@@ -23,7 +23,23 @@ within the web development / web graphics area though. In my spare time I have h
 avatars, posters for ads and so on. When I expected my third child I made a decision to finally pick up on this interest and
 so I enrolled in different courses concerning code and web. This fall (2015) I started my current education to become
 a web programmer at LNU. So far, I love it. It is a great program - always up to date with the latest web technology and
-truly commited teachers. 
+truly committed teachers.
 
-Take care out there, and see you soon again!
+
+* * *
+
+
+####Courses I previously have taken within the web development area:
+
+- Web development I  - 7.5p LTU Fall 2014
+
+- Web development II - 7.5p LTU Spring 2014
+
+- Information architecture and CMS - 7.5p LTU Spring 2014
+
+- Web Technics - 15p LNU Spring 2014
+
+* * *
+
+Take care out there, and see you soon again! // Ulrica
 
