@@ -29,7 +29,7 @@ Assuming you have got a GitHub account and found a repo you'd like to contribute
 - Make sure you stand in the right directory by writing: ```cd <forked-repo>/```
 
 - To add the upstream remote to your local terminal do this by:
-``` git remote upstream https://github.com/<repo-owner-name>/<repo-name>.git```
+``` git remote add upstream https://github.com/<repo-owner-name>/<repo-name>.git```
 
 - Make a separate branch that you may do your work upon: ```git branch <name-of-branch>```
 
