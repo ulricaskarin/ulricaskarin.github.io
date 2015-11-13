@@ -17,7 +17,7 @@ $grey-color:       #828282;
 $grey-color-middle: #454545;
 $grey-color-darker: #373737;
 
-$grey-color-light: lighten($grey-color, 40%);
+$grey-color-light: lighten($grey-color, 20%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 //-------------------------------------------- THEME --------------------------------------------//
@@ -61,7 +61,7 @@ $spacing-unit:     30px;
 
 //---------------------------------------- VARIOUS MIXINS ----------------------------------------//
 
-// Hides element
+// Hides element (for future use when site grows)
 @mixin hide-element() {
     visibility: hidden !important;
     display: none;
@@ -73,6 +73,10 @@ $spacing-unit:     30px;
 @mixin bold-upper-text() {
     text-transform: uppercase;
     font-weight: bold;
+}
+
+@mixin element_border($size, $color, $style) {
+    border: $size $style $color;
 }
 
 // Rounds corners:
@@ -87,6 +91,14 @@ $spacing-unit:     30px;
     opacity: $opacity;
     $opacity-ie: $opacity * 100;
     filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+// Box shadow mixin:
+@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
+
+    -webkit-box-shadow:$top $left $blur $color #{$inset};
+    -moz-box-shadow:$top $left $blur $color #{$inset};
+    box-shadow:$top $left $blur $color #{$inset};
 }
 
 //---------------------------------------- PARTIALS ----------------------------------------//

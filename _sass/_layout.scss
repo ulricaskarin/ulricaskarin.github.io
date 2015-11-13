@@ -234,11 +234,14 @@
 }
 
 //----------------------------------------------- SHOW ALL POSTS -----------------------------------------------//
-// All categories using target to pinpoint them when clicked | resource tutorial: http://schoewilliam.fr/2015/02/10/jekyll-pro-tip-awesome-archive-page.html:
+// All categories using target to pinpoint them when clicked | Tips taken from: http://schoewilliam.fr/2015/02/10/jekyll-pro-tip-awesome-archive-page.html:
 .catblock {
     font-size: $mini-font-size * 0.75;
     padding-top: 0.5em;
+    padding-bottom: 1em;
     padding-left: 0.5em;
+    @include box-shadow(0, 5px,5px, rgba(0, 0, 0, 0.375));
+    @include element_border(1px, dashed, $grey-color-light);
 
     > h2 {
 
