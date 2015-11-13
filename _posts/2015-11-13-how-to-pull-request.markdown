@@ -24,9 +24,7 @@ Assuming you have got a GitHub account and found a repo you'd like to contribute
 - Fork the existing repo to get your own copy. This may be done by the little "button" fork in the top right corner of the repo page in question:
 ![Fork button]({{ site.url }}/assets/images/fork.png) *(no 6 in this image means it has been forked 6 times)*
 
-- In your local terminal, now clone the repo by:
-
-```git clone https://github.com/<your-username>/<forked-repo>.git```
+- In your local terminal, clone the repo: ```git clone https://github.com/<your-username>/<forked-repo>.git```
 
 - Make sure you stand in the right directory by writing: ```cd <forked-repo>/```
 
@@ -42,9 +40,9 @@ Assuming you have got a GitHub account and found a repo you'd like to contribute
 
 - Commit your changes: ```commit -m"<your smart words on the contribution>"```
 
-- Push your changes: ```git push -u origin <name-of-branch>```
+- Push your changes to your branch: ```git push -u origin <name-of-branch>```
 
 - Now when all is done, lets travel back to your own GitHub account. You may now see that in your forked repo a green
 button has appeared: "Compare & pull request". Clicking this button takes you to a new page where you may add a comment
 to the owner to the repo and then click the button "Create pull request". Voilà! Your PR is sent. Now, just wait and see
-if it gets accepted.
+if it gets accepted. Simple as that!
