@@ -1,10 +1,13 @@
 ---
 layout: page
 title: Linked
-permalink: /linked/
+
+author: Ulrica Skarin
+type: list
+description: A list of useful links 
 ---
 
-Some useful links on code related topics is presented on this page.
+Some useful links on code and graphic related topics is presented on this page.
 
 #### Static Site Generators (Jekyll):
 
