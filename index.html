@@ -10,7 +10,7 @@ layout: default
 
         <div class="short-presentation">
 
-            <p><i>{{ site.description }}</i></p>
+            <p><i><b>Ulrica Skarin</b><br />{{ site.description }}</i></p>
 
             <hr />
 
@@ -23,7 +23,7 @@ layout: default
 
         <div class="catblock" id="allposts">
 
-        <!--To do - make an archives page-->
+        <!--To do - make an archives page for posts-->
             {% for post in site.posts %}
 
             {% assign currentdate = post.date | date: "%Y" %}
@@ -48,6 +48,9 @@ layout: default
             {% endfor %}
 
         </div>
+
+
+
 
     </div>
 

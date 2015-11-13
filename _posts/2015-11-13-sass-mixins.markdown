@@ -4,7 +4,6 @@ title:  "Sass Mixins"
 date:   2015-11-13 16:00:00
 category: Sass
 
-image: ulricaskarin.github.io/assets/images/og_pic.png
 type: article
 description: A little chat about Sass Mixins
 
