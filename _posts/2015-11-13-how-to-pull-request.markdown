@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to pull request on GitHub"
+title:  "Pull request on GitHub"
 date:   2015-11-13 20:30:00
 category: github
 
