@@ -70,8 +70,9 @@ a {
     &:hover {
         color: $text-color;
         position: relative;
-        top: 2px;
-        text-decoration: underline;
+        top: 1px;
+        transition: color 0.3s ease;
+
     }
 }
 
@@ -126,7 +127,6 @@ pre {
     overflow: hidden;
 
     @include media-query($on-palm) {
-
         border: 0;
     }
 

@@ -19,7 +19,7 @@ layout: default
         </div>
 
         <!--Lists blog posts when unfolded link:-->
-        <p><a href="#allposts">&hearts; Show all posts</a></p>
+        <p>&hearts; All posts</p>
 
         <div class="catblock" id="allposts">
 
@@ -50,7 +50,7 @@ layout: default
         </div>
 <br />
         <!--Lists blog posts by category:-->
-        <p><a href="#categories">&hearts; By category</a></p>
+        <p>&hearts; Posts by category</p>
 
         <div class="catblock" id="categories">
             {% for category in site.categories %}
@@ -74,10 +74,6 @@ layout: default
 
             <div class="post-preview">
 
-
-            <!-- Lists latest blog posts with 40 word preview-->
-            <h2>Latest Blogposts:</h2>
-
             <ul class="post-list">
 
                 {% for post in paginator.posts  %}
@@ -88,7 +84,7 @@ layout: default
 
                     <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
 
-                    {{ post.content | truncatewords: 40}}<br />
+                    {{ post.content | truncatewords: 50}}<br />
 
                     <a href="{{ post.url | prepend: site.baseurl }}">Read More...</a>
 

@@ -43,7 +43,6 @@
     float: right;
     line-height: 52px;
     padding-right: 1em;
-    //@include bold-upper-text;
 
     .menu-icon {
         display: none;
@@ -62,7 +61,8 @@
     .page-link:hover {
         color: $theme-color;
         position: relative;
-        top: 2px;
+
+        transition: color 0.3s ease;
 
     }
 
@@ -155,14 +155,15 @@
 .post-meta {
     font-size: $mini-font-size;
     color: $grey-color;
+
 }
 
 .post-link {
+    color: $grey-color-dark;
     display: block;
     font-size: 25px;
-}
-.post-link:before{
-    content: url("../assets/images/pin.png");
+    border-bottom: 1px dashed $grey-color-light;
+
 }
 
 // If image in post this class is used:
@@ -230,18 +231,17 @@
 //----------------------------------------------- LEFT SIDE PRES -----------------------------------------------//
 .short-presentation {
     font-size: $mini-font-size * 0.85;
-    color: $theme-color;
+    color: $grey-color;
 }
 
-//----------------------------------------------- SHOW ALL POSTS -----------------------------------------------//
-// Tips taken from: http://schoewilliam.fr/2015/02/10/jekyll-pro-tip-awesome-archive-page.html:
+//-------------------------------------------- POST LISTS LEFT SIDE --------------------------------------------//
 .catblock {
     font-size: $mini-font-size * 0.75;
     padding-top: 0.5em;
     padding-bottom: 1em;
     padding-left: 0.5em;
-    @include box-shadow(0, 5px,5px, rgba(0, 0, 0, 0.375));
-    @include element_border(1px, dashed, $grey-color-light);
+    @include box-shadow(0, 5px,5px, rgba(0, 0, 0, 0.175));
+   // @include element_border(1px, dashed, $grey-color-light);
 
     > h2 {
 
@@ -263,20 +263,6 @@
     }
 }
 
-#allposts #categories:not(:target) {
-    width: 100%;
-    margin: 0;
-    border: 1px dashed $grey-color;
-
-
-    display: none;
-
-}
-#allposts #categories:target {
-    animation: slidedown .5s 1;
-    -webkit-animation: slidedown .5s 1;
-
-}
 
 @keyframes slidedown {
     from {
@@ -303,7 +289,6 @@
 
 .site-footer {
     border-top: 1px dashed #000;
-    //border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
     background-color: $grey-color-darker;
 }
