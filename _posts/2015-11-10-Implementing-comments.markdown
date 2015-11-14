@@ -7,6 +7,7 @@ category: programming
 type: article
 description: How I used disqus to implement comments in my blog
 
+category: examination
 author: Ulrica Skarin
 comments: true
 published: true

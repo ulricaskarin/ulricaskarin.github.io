@@ -2,7 +2,7 @@
 layout: post
 title:  "About Open Graph"
 date:   2015-11-12 02:00:00
-category: SEO
+category: examination
 
 image: ulricaskarin.github.io/assets/images/og_pic.png
 type: article

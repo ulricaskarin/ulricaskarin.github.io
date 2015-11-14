@@ -2,7 +2,7 @@
 layout: post
 title:  "My first post"
 date:   2015-11-08 22:22:22
-category: Misc
+category: general
 
 type: article
 description: First words on my Jekyll Blog

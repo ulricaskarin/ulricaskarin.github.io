@@ -263,7 +263,7 @@
     }
 }
 
-#allposts, #categories:not(:target) {
+#allposts #categories:not(:target) {
     width: 100%;
     margin: 0;
     border: 1px dashed $grey-color;
@@ -272,7 +272,7 @@
     display: none;
 
 }
-#allposts, #categories:target {
+#allposts #categories:target {
     animation: slidedown .5s 1;
     -webkit-animation: slidedown .5s 1;
 

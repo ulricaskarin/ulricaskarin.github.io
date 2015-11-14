@@ -2,7 +2,7 @@
 layout: post
 title:  "Static Site Generators"
 date:   2015-11-12 13:42:22
-category: programming
+category: examination
 author: Ulrica Skarin
 comments: true
 ---
