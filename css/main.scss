@@ -61,7 +61,7 @@ $spacing-unit:     30px;
 
 //---------------------------------------- VARIOUS MIXINS ----------------------------------------//
 
-// Hides element (for future use when site grows)
+// Hides element:
 @mixin hide-element() {
     visibility: hidden !important;
     display: none;
