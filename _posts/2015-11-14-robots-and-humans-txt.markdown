@@ -2,6 +2,9 @@
 layout: post
 title:  "Robots and Humans text"
 date:   2015-11-14 15:17:25
+
+type: article
+description: Reflections over robots.txt and humans.txt
 category: examination 1
 author: Ulrica Skarin
 comments: true
@@ -37,7 +40,7 @@ GitHub: ulricaskarin
 Mail: ls222xp(at)student.lnu.se
 Location: Sundsvall, Sweden
 
-Support: The great staff at Linnaeus University, Kalmar, Sweden
+Support: Staff at Linnaeus University, Kalmar, Sweden
 
 /* SITE */
 

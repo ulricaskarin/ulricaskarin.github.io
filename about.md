@@ -28,7 +28,6 @@ truly committed teachers.
 
 * * *
 
-
 ####Courses I previously have taken within the web development area:
 
 - Web development I  - 7.5p LTU Fall 2014
@@ -41,5 +40,4 @@ truly committed teachers.
 
 * * *
 
-Take care out there, and see you soon again! // Ulrica
 

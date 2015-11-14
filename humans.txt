@@ -6,7 +6,7 @@ GitHub: ulricaskarin
 Mail: ls222xp(at)student.lnu.se
 Location: Sundsvall, Sweden
 
-Support: The great staff at Linnaeus University, Kalmar, Sweden
+Support: Staff at Linnaeus University, Kalmar, Sweden
 
 /* SITE */
 

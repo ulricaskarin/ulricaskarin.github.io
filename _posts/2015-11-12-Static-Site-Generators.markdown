@@ -2,6 +2,9 @@
 layout: post
 title:  "Static Site Generators"
 date:   2015-11-12 13:42:22
+
+type: article
+description: Reflections Static Site Generators
 category: examination 1
 author: Ulrica Skarin
 comments: true

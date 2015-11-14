@@ -8,7 +8,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://localhost:4000" # the base hostname & protocol for your site
 
 #pagination
-paginate: 4
+paginate: 5
 
 # Social Media
 twitter_username: acirlu33
@@ -19,8 +19,6 @@ comments:
     provider: disqus
     disqus:
         short_name: lillulli
-    livefyre:
-        site_id:3
     intensedebate:
         account: lillulli
 

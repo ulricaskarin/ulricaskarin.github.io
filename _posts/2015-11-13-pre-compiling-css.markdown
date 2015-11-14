@@ -2,6 +2,9 @@
 layout: post
 title:  "Pre-compiling CSS"
 date:   2015-11-13 14:16:23
+
+type: article
+description: Reflections over pre-compiled CSS
 category: examination 1
 author: Ulrica Skarin
 comments: true
