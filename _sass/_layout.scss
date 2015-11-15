@@ -167,11 +167,7 @@
 
 }
 
-.post-featured {
-    color:$theme-color;
-    text-transform: uppercase;
-
-}
+// Featured welcome post
 .post-featured-content {
     font-size: $spacing-unit - 15;
     line-height:  2em;
@@ -181,9 +177,8 @@
     @include rounded(2em);
 }
 
-// If image in post this class is used:
+// For images in blogposts:
 .post-image {
-
     max-width: 250px;
     display: block;
     margin: 0 auto;
@@ -195,7 +190,6 @@
 
 .post-header {
     margin-bottom: $spacing-unit;
-
 }
 
 .post-title {
@@ -241,12 +235,6 @@
             font-size: 18px;
         }
     }
-}
-
-//----------------------------------------------- LEFT SIDE PRES -----------------------------------------------//
-.short-presentation {
-    font-size: $mini-font-size * 0.85;
-    color: $grey-color;
 }
 
 //-------------------------------------------- POST LISTS LEFT SIDE --------------------------------------------//
