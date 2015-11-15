@@ -21,11 +21,15 @@ a mixin lets you make groups of CSS declarations that you'd like to reuse throug
 for all of you who are familiar with programming languages. For example it is possible to
 even pass values to your mixins which makes them more flexible.
 
-On the front page of this website I've got a link to *Show all posts* that when clicked on - it folds out and shows a list of
-all posts (well I know, I probably have to rewrite this one in the future when the list grows). The "folding out thing" I
-created after tips in a tutorial [here][here].  The border and the box-shadow though, are mixins that I wrote myself and applied
-to my "show posts div" with the ```@include box-shadow``` and ```@include element_border``` commands. I am truly in love with this feature and I strongly recommend
-everyone who is developing web pages to take a deeper look into Sass. This is how my shadow and border mixin are coded:
+Lets take a simple example on how you may implement a mixin. On the front page of this website I've got two "boxes" with
+a slight shadow - *All posts* and *Posts by category*. As you understand, this is basically just a simple box-shadow css.
+BUT - instead of writing the regular box-shadow-css directly on this element, I've turned it into a mixin so that I may
+reuse it in several places if I'd wish. Then the only thing I need to do is adding a short ```@include box-shadow``` to
+those elements I want it applied to. On top of that I also made sure that in my original mixin it is possible to pass
+arguments to it. This means that I on each element with a box shadow may adjust it in terms of blur, color, optional
+inset etc.
+
+This is how my shadow mixin is coded:
 
 {% highlight scss %}
 // Box shadow mixin:
@@ -36,10 +40,13 @@ everyone who is developing web pages to take a deeper look into Sass. This is ho
     box-shadow:$top $left $blur $color #{$inset};
 }
 
-// Border mixin:
-@mixin element_border($size, $color, $style) {
-    border: $size $style $color;
-}
+{% endhighlight %}
+
+This is how I have applied the mixin to my boxes:
+
+{% highlight scss %}
+.catblock {
+    @include box-shadow(0, 5px,5px, rgba(0, 0, 0, 0.175));
 {% endhighlight %}
 
 I urge all of you to go dive into the wonderful world of Sass. It makes a web developers life somewhat easier!
