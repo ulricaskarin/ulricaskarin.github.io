@@ -73,23 +73,19 @@ layout: default
 
                         {% if post.featured %}
 
-
-
                         <div class="post-featured-content">{{ post.content }}</div>
 
                         {% endif %}
-
+                    </li>
                     {% endfor %}
 
                     <!--Preview of posts, truncated to 50 words:-->
                     {% for post in paginator.posts  %}
 
                         {% if post.featured %}
-
                         <!--do NOT show featured post in blog flow-->
-
                         {% else %}
-
+                    <li>
                         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
                         <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
@@ -99,6 +95,7 @@ layout: default
                         <a href="{{ post.url | prepend: site.baseurl }}">Read More...</a>
 
                     </li>
+
                     {% endif %}
                     {% endfor %}
 

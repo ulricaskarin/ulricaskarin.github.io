@@ -7,6 +7,7 @@ type: article
 description: Welcome to a dev students quest
 featured: true
 author: Ulrica Skarin
+comments: false
 ---
 
 ##Welcome to a dev students quest
