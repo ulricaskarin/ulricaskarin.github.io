@@ -51,6 +51,7 @@
     .page-link {
         color: $text-color;
         line-height: $base-line-height;
+        font-size: 24px;
 
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
@@ -172,7 +173,7 @@
     max-width: 250px;
     display: block;
     margin: 0 auto;
-    padding: 0.4em;
+    padding: 0.5em;
     margin-bottom: 1em;
     @include rounded(2em);
 
