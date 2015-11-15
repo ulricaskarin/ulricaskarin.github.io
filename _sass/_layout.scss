@@ -123,7 +123,7 @@
 //-------------------------------------------- PAGE CONTENT --------------------------------------------//
 .page-content {
     padding: $spacing-unit 0;
-    min-height: 600px;
+    min-height: 700px;
 }
 
 .page-heading {
@@ -211,6 +211,11 @@
     padding-right: $spacing-unit + 5;
     margin-bottom: $spacing-unit * 2;
 
+    @include media-query($on-laptop) {
+        width: 100%;
+        padding: 0;
+    }
+
     p {
         font-size: $mini-font-size;
     }
@@ -238,6 +243,7 @@
             font-size: 18px;
         }
     }
+
 }
 
 //-------------------------------------------- POST LISTS LEFT SIDE --------------------------------------------//
