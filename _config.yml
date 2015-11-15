@@ -2,13 +2,12 @@
 title: A dev students quest
 author: Ulrica Skarin
 email: ls222xp@student.lnu.se
-description: > # this means to ignore newlines until "baseurl:"
-  A dev students quest
+description:  A dev students quest
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://localhost:4000" # the base hostname & protocol for your site
+url: "http://ulricaskarin.github.io" # the base hostname & protocol for your site
 
 #pagination
-paginate: 5
+paginate: 4
 
 # Social Media
 twitter_username: acirlu33

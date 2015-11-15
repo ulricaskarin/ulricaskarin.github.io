@@ -1,42 +1,25 @@
 <head>
     <meta charset="utf-8">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Ulrica Skarin - A dev students quest! My journey in becoming a web programmer." />
     <meta name="keywords" content="Web development, programming, design, code" />
-    <link rel="icon" type="image/png" href="assets/images/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="assets/images/favicon-16x16.png" sizes="16x16" />
-    <link rel="author" href="../humans.txt" />
-
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-
-    <!-- OPEN GRAPH DATA -->
-    {% if page.type %}
-    <meta content="{{ page.type }}" property="og:type">
-    {% else %}
-    <meta content="blog" property="og:type" />
-    {% endif %}
-    <meta content="{{ site.title }}" property="og:site_name">
-    {% if page.title %}
-    <meta content="{{ page.title }}" property="og:title">
-    {% else %}
-    <meta content="{{ site.title }}" property="og:title">
-    {% endif %}
-    {% if page.description %}
-    <meta content="{{ page.description }}" property="og:description">
-    {% else %}
-    <meta content="{{ site.description }}" property="og:description">
-    {% endif %}
-    {% if page.url %}
-    <meta content="{{ site.url }}{{ page.url }}" property="og:url">
-    {% endif %}
-    {% if page.image %}
-    <meta content="{{ page.image }}" property="og:image">
-    {% else %}
-    <meta content="http://ulricaskarin.github.io/assets/images/ls222xp_ulricaskarin1.png" property="og:image">
-    {% endif %}
-
-
+    <link rel="icon" type="image/png" href="ulricaskarin.github.io/assets/images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="ulricaskarin.github.io/assets/images/favicon-16x16.png" sizes="16x16" />
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="author" href="../humans.txt" />
+
+    <!-- OPEN GRAPH DATA -->
+    {% if page.type %}<meta content="{{ page.type }}" property="og:type">
+    {% else %}<meta content="blog" property="og:type" />{% endif %}
+    <meta content="{{ site.title }}" property="og:site_name">
+    {% if page.title %}<meta content="{{ page.title }}" property="og:title">
+    {% else %}<meta content="{{ site.title }}" property="og:title">{% endif %}
+    {% if page.description %}<meta content="{{ page.description }}" property="og:description">
+    {% else %}<meta content="{{ site.description }}" property="og:description">{% endif %}
+    {% if page.url %}<meta content="{{ site.url }}{{ page.url }}" property="og:url">{% endif %}
+    {% if page.image %}<meta content="{{ page.image }}" property="og:image">
+    {% else %}<meta content="http://ulricaskarin.github.io/assets/images/ls222xp_ulricaskarin1.png" property="og:image">{% endif %}
 </head>

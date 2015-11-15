@@ -1,32 +1,18 @@
 <!DOCTYPE html>
 <html>
-
-  {% include head.html %}
-
-  <body>
-
+{% include head.html %}
+<body>
   <!--Containing wrap-->
   <div id="big_wrap">
-
-        {% include header.html %}
-
+      {% include header.html %}
         <div class="page-content">
-
           <div class="wrapper">
-
             {{ content }}
-
           </div>
-
         </div>
-
-        {% include footer.html %}
-
-      </div>
-
+{% include footer.html %}
+  </div>
   <!--DISQUS SCRIPT LEAVE BE-->
   <script id="dsq-count-scr" src="//adevstudentsquest.disqus.com/count.js" async></script>
-
-  </body>
-
+</body>
 </html>
