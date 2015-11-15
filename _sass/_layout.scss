@@ -256,6 +256,7 @@
     @include box-shadow(0, 5px,5px, rgba(0, 0, 0, 0.155));
    // save: @include element_border(1px, dashed, $grey-color-light);
 
+
     > h2 {
 
         font-size: $mini-font-size * 1.1;
