@@ -167,6 +167,20 @@
 
 }
 
+.post-featured {
+    color:$theme-color;
+    text-transform: uppercase;
+
+}
+.post-featured-content {
+    font-size: $spacing-unit - 15;
+    line-height:  2em;
+    text-align: justify;
+    background: lighten( $grey-color-light, 25% );
+    padding: 1em;
+    @include rounded(2em);
+}
+
 // If image in post this class is used:
 .post-image {
 

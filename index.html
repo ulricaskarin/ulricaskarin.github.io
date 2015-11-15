@@ -53,7 +53,7 @@ layout: default
         <p>&hearts; Posts by category</p>
 
         <div class="catblock" id="categories">
-            {% for category in site.categories %}
+         {% for category in site.categories %}
             <h2>{{ category | first }}</h2>
                      <ul>
                         {% for posts in category %}
@@ -74,25 +74,45 @@ layout: default
 
             <div class="post-preview">
 
-            <ul class="post-list">
+                <ul class="post-list">
 
-                {% for post in paginator.posts  %}
+                    <!--Displays a FEATURED blogpost on top of page (ie welcome post):-->
+                    {% for post in site.posts %}
 
-                <li>
+                    <li>
 
-                    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+                        {% if post.featured %}
 
-                    <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
 
-                    {{ post.content | truncatewords: 50}}<br />
 
-                    <a href="{{ post.url | prepend: site.baseurl }}">Read More...</a>
+                        <div class="post-featured-content">{{ post.content }}</div>
 
-                </li>
+                        {% endif %}
 
-                {% endfor %}
+                    {% endfor %}
 
-            </ul>
+                    <!--Preview of posts, truncated to 50 words:-->
+                    {% for post in paginator.posts  %}
+
+                        {% if post.featured %}
+
+                        <!--do NOT show featured post in blog flow-->
+
+                        {% else %}
+
+                        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+                        <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+
+                        {{ post.content | truncatewords: 50}}<br />
+
+                        <a href="{{ post.url | prepend: site.baseurl }}">Read More...</a>
+
+                    </li>
+                    {% endif %}
+                    {% endfor %}
+
+                </ul>
 
             <!-- Pagination links -->
             {% if paginator.total_pages > 1 %}
