@@ -13,8 +13,8 @@ Some useful links on code and graphic related topics is presented on this page.
 
 - [Jekyll Doc](http://jekyllrb.com//){:target="_blank"}
 - [Introduction to SSG](https://davidwalsh.name/introduction-static-site-generators){:target="_blank"}
-- [Carl Boettiger on learning Jekyll](http://www.carlboettiger.info/2012/12/30/learning-jekyll.html){:target="_blank"}
-- [Dr Jekyll - design an awesome archive page](http://schoewilliam.fr/2015/02/10/jekyll-pro-tip-awesome-archive-page.html){:target="_blank"}
+- [Carl B on learning Jekyll](http://www.carlboettiger.info/2012/12/30/learning-jekyll.html){:target="_blank"}
+- [Dr Jekyll](http://schoewilliam.fr/2015/02/10/jekyll-pro-tip-awesome-archive-page.html){:target="_blank"}
 - [YAML Lint - YAML validator](http://www.yamllint.com/){:target="_blank"}
                                                               
 #### Sass:
@@ -22,7 +22,7 @@ Some useful links on code and graphic related topics is presented on this page.
 - [Sass Basics](http://sass-lang.com/guide){:target="_blank"}
 - [Using Sass with Jekyll](http://markdotto.com/2014/09/25/sass-and-jekyll/){:target="_blank"}
 - [Sass - Guides and Tutorials](http://thesassway.com/guides){:target="_blank"}
-- [Disadvantages of Css Preprocessors](http://adamsilver.io/articles/the-disadvantages-of-css-preprocessors/){:target="_blank"}
+- [Disadvantages of CSS Preprocessors](http://adamsilver.io/articles/the-disadvantages-of-css-preprocessors/){:target="_blank"}
 
 #### Markdown:
 
@@ -38,4 +38,3 @@ Some useful links on code and graphic related topics is presented on this page.
 - [JavaScript is Sexy](http://javascriptissexy.com/){:target="_blank"}
 - [JavaScript by Angus Croll](https://javascriptweblog.wordpress.com/){:target="_blank"}
 - [Crockford on JavaScript](https://www.youtube.com/watch?v=JxAXlJEmNMg){:target="_blank"}
-
