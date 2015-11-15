@@ -10,7 +10,7 @@ Support: Staff at Linnaeus University, Kalmar, Sweden
 
 /* SITE */
 
-Last Update: 2015/11/11
+Last Update: 2015/11/15
 Site Name: A dev students quest
 Site URL: https://ulricaskarin.github.io
 Language: English

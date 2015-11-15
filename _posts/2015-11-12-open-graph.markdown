@@ -54,14 +54,12 @@ Twitter uses something called TwitterCards for example, read more about this her
 I have used Open Graph in order to have control over how this website is presented when shared
 in social media. In the head section of the original code I'm using Jekyll syntax with if statements to validate if for example
 a page title or an image exists. This way I get an automatic dynamic and simple check to all my tags, without having to
-do it manually for each page. As a concrete example I have implemented an image tag in my blogposts *front matter* -
-in those posts containing an image. So if a user shares a specific blogpost with a specific image, this is the one being shown.
-If no picture is included within a page, my Open Graph settings will point to my preset logo and show this one.
+do it manually for each page. As a concrete example I have implemented a description tag in my blogposts *front matter*
+So if a user shares a specific blogpost, this is the description being shown.
 
 To make sure it works as expected I have validated my OG with FaceBooks open graph debugger: [FaceBook Debugger][FaceBook Debugger].
 
 ![Open Graph Logo]({{ site.url }}/assets/images/og_pic.png){: .post-image }
-
 
 [FaceBook Debugger]: https://developers.facebook.com/tools/debug/
 [The Open Graph Protocol]: http://ogp.me/
