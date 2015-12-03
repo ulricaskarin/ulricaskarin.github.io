@@ -38,3 +38,5 @@ Some useful links on code and graphic related topics is presented on this page.
 - [JavaScript is Sexy](http://javascriptissexy.com/){:target="_blank"}
 - [JavaScript by Angus Croll](https://javascriptweblog.wordpress.com/){:target="_blank"}
 - [Crockford on JavaScript](https://www.youtube.com/watch?v=JxAXlJEmNMg){:target="_blank"}
+- [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model){:target="_blank"}
+
