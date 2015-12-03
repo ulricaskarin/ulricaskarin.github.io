@@ -74,6 +74,19 @@ a {
         transition: color 0.3s ease;
 
     }
+
+    &:active {
+        color: $text-color;
+        position: relative;
+        top: 1px;
+        transition: color 0.3s ease;
+
+    }
+}
+
+// Active Links:
+.current {
+    color: $theme-color;
 }
 
 /*-------------------------------------------- BASIC BL-QUOTES --------------------------------------------*/
