@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "School Update"
+date:   2016-02-02 00:00:00
+category: Programming
+
+type: article
+description: Short school update
+
+author: Ulrica Skarin
+comments: true
+published: true
+---
+
+So, a new year has arrived! In school the schedule is full. We have moved on from client based programming to server side
+programming and are now learning how to **webscrape**! So interesting and lots of fun! Our base is JavaScript, Node.js and we
+take help from different npm modules like cheerio and request. In time I will write more about it... As for now, there is not
+much time for anything else than studies. Take care... :)
+
