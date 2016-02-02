@@ -21,6 +21,14 @@ comments:
     intensedebate:
         account: lillulli
 
+gems:
+- jekyll-mentions
+- jemoji
+- jekyll-redirect-from
+- jekyll-sitemap
+
+- jekyll-feed
+
 # Build settings
 markdown: kramdown
 timezone: Europe/Stockholm
