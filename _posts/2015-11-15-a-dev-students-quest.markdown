@@ -10,7 +10,7 @@ author: Ulrica Skarin
 comments: false
 ---
 
-##Welcome,
+Welcome,
 
 to **a dev students quest**. My name is Ulrica Skarin and I am currently a student at the
 Linnaeus University in the [web programming course]. My aim is to gain a deeper understanding within

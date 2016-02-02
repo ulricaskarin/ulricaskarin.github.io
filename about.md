@@ -7,7 +7,7 @@ type: article
 description: About the site and the author 
 ---
 
-###... the site
+... the site
 This website is a result of an assignment in course 1dv022 - Client based web programming at Linnaeus University. 
 *(Please read more about the program I attend [here](https://coursepress.lnu.se/program/webbprogrammerare/){:target="_blank"})*.
 The aim was to use the Static Site Generator Jekyll in combination with Sass CSS preprocessor (scss) - in order to build a fully functional
@@ -15,7 +15,7 @@ website. This has been an amazing journey for me! I have learned a great deal th
 of making a website enormously! I intend to keep this website going as a journal over my personal progress in the web development
 area.
 
-###... me
+... me
 Well, how about me. My name is Ulrica Skarin and I am a happy mother of three living in Sundsvall, Sweden. Most of my life
 I have been working in the health sector, as an ICU nurse. Technology in combination with humanity is great, and I have
 really enjoyed my profession tremendously. All along, since back in the 90's I have had hidden dream of becoming something
