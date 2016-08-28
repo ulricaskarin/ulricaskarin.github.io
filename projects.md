@@ -42,3 +42,8 @@ has got [nginx](https://nginx.org/) in front as a reverse proxy._
 - **Course in Web Technics 1ME321:**:
 <br />
 -- [Elsas Café - html and CSS](http://ulricaskarin.com/u3/index.html){:target="_blank"}
+
+#### SPRING 2015:
+- **Web development II at LTU (course in PHP and MySQL):**
+<br />
+-- [Good Cause Rebel - A CMS from scratch in PHP and MySQL](http://ulricaskarin.com/gcr){:target="_blank"}
